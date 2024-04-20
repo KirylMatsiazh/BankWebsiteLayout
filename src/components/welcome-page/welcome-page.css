@@ -1,0 +1,180 @@
+.welcome__page{
+    width: 100%;
+}
+
+
+
+
+
+.welcome__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.welcome__nav__item{
+    margin: 1%;
+    color: black;
+    width: fit-content;
+}
+
+@media (max-width: 768px) {
+    .welcome__nav__item {
+      width: 20%; /* Display two items per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome__nav__item {
+      width: 20%; /* Display one item per row */
+    }
+}
+
+
+
+
+
+
+.welcome__content{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .welcome__content {
+      flex-direction: column; /* Change to column layout */
+    }
+}
+
+
+
+
+
+
+
+.welcome__header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    height:fit-content;
+    margin-left:0%;
+    padding-left: 10%;
+    padding-bottom: 0%;
+}
+.header__container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.header{
+    font-size: 300%;
+    margin: 0%;
+}
+
+.description__container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.description{
+    margin: 0%;
+}
+
+.welcome__header__btns{
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    padding-top: 5%;
+    margin-left: 0%;
+    margin-top:0%;
+}
+
+.btn{
+    border: 1px solid;
+    margin-right: 10%;
+    border-color: palevioletred;
+    border-radius: 5px;
+    color: palevioletred;
+    background-color: white;
+    font-size: 120%;
+    white-space: nowrap;
+    padding: 5%;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn:hover{
+    border: 1px solid;
+    margin-right: 10%;
+    border-color: palevioletred;
+    border-radius: 5px;
+    color: white;
+    background-color: palevioletred;
+    font-size: 120%;
+    white-space: nowrap;
+    padding: 5%;
+}
+
+
+
+
+
+.quick__access{
+    top: 0%;
+    z-index: +1;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 0%;
+    margin-right: 10%;
+}
+
+.quick__access__btn{
+    border: 2px solid;
+    border-color: palevioletred;
+    background-color: white;
+    border-radius: 25px;
+    padding: 3%;
+
+    font-size: large;
+    font-weight:900;
+    flex-wrap: wrap;
+}
+
+
+.quick__access__btn:hover{
+    border: 2px solid;
+    border-color: white;
+    background-color: palevioletred;
+    border-radius: 25px;
+    padding: 3%;
+    font-size: large;
+    font-weight:900;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+#car__loans{
+    margin-top: 2%;
+    margin-right: 70%;
+}
+
+#home__loan{
+    margin-top: 10%;
+    margin-left: 70%;
+}
+
+
