@@ -4,7 +4,7 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    background-color: #dde0ab;
+    background-color:#97cba9;
 }
 
 
@@ -32,6 +32,13 @@
     font-weight: 500;
 }
 
+.nav__link:hover{
+    margin: 1%;
+    text-decoration: none;
+    color:#feffdf;
+    font-weight: 500;
+}
+
 
 
 .contact__info{
@@ -39,7 +46,9 @@
     height: fit-content;
     padding-left: 8%;
     padding-bottom: 1%;
-    min-width:50%;
+    padding-top: 5%;
+    width:100%;
+    z-index: +1;
 }
 
 .social__link{
@@ -53,7 +62,7 @@
     height: 50%;
     padding-bottom: 5%;
     padding-top: 3%;
-    background-color: #97cba9;
+    background-color:#dde0ab;
 }
 
 .contents{
@@ -78,10 +87,10 @@
     padding: 3%;
     border: none;
     border-radius: 10px;
-    background-color: #feffdf;
+    background-color:#668ba4;
     margin-right: 5%;
     font-size: large;
-    color: #668ba4;
+    color:#feffdf;
     margin-bottom: 5%;
 }
 
@@ -89,10 +98,10 @@
     padding: 3%;
     border: none;
     border-radius: 10px;
-    background-color: #668ba4;
+    background-color: #feffdf;
     margin-right: 5%;
     font-size: large;
-    color: #feffdf;
+    color: #668ba4;
     margin-bottom: 5%;
 }
 
@@ -104,17 +113,27 @@
 
 
 .additional__btns{
+    background-color:#dde0ab;
+    position: relative; /* Set position to relative */
     display: flex;
-    padding-bottom: 5%;
-    padding-top: 3%;
-    background-color: #97cba9;
-    background-image: url(actualfamily.png);
+    align-items: center;
+    padding-bottom: 20%;
+    padding-top: 0%;
+    z-index: +1;
+}
+
+.background-image {
+    position: absolute; /* Set position to absolute */
+    margin-top: 10%;
+    top: 0; /* Position at the top of the container */
+    left: 0; /* Position at the left of the container */
+    width: 100%; /* Set width to cover the entire container */
+    height: 100%; /* Set height to cover the entire container */
+    background-image: url('actualfamily.png'); /* Set the background image */
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-position-y: bottom;
-    background-attachment:local;
-    background-size: contain;
-    background-position-y: bottom;
+    background-position: 50% 100%; /* Position the background image at the bottom center */
+    background-size:contain;
+    z-index: -1; /* Move the background image behind the buttons */
 }
 
 
@@ -123,6 +142,20 @@
     font-size: larger;
     background-color: #668ba4;
     color: #feffdf;
+    border: none;
+    border-radius: 30px;
+    font-weight: 900;
+    padding: 2%;
+    margin-right: 26%;
+    margin-left: 10%;
+    height: fit-content;
+    min-width: 20%;
+}
+
+.additional__btn:hover{
+    font-size: larger;
+    background-color: #feffdf;
+    color: #668ba4;
     border: none;
     border-radius: 30px;
     font-weight: 900;

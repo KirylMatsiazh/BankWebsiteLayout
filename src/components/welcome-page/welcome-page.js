@@ -34,6 +34,7 @@ const WelcomePage = () => {
 
 
                 <div className='additional__btns'>
+                    <div className="background-image"></div>
                     <button className='additional__btn' id ='car__loans'><BsCarFrontFill /> Car Loans</button>
                     <button className='additional__btn' id ='home__loan'><BsFillHouseFill /> Home loan</button>
                 </div>
