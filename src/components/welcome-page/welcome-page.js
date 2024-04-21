@@ -1,56 +1,51 @@
+import React from 'react';
 import './welcome-page.css';
+import { SocialIcon } from 'react-social-icons'
+import { BsCarFrontFill } from "react-icons/bs";
+import { BsFillHouseFill } from "react-icons/bs";
 
-function WelcomePage(){
-    return(
-        <div className = 'welcome__page'>
-            <nav className ="welcome__nav">
-                    <div className="welcome__nav__item">
-                        <a href="#">RETAIL</a>
-                    </div>
-                    <div className="welcome__nav__item">
-                        <a href="#">SME</a>
-                    </div>
-                    <div className="welcome__nav__item">
-                        <a href="#">CORPORATE</a>
-                    </div>
-                    <div className="welcome__nav__item">
-                        <a href="#">ABOUT US</a>
-                    </div>
-                    <div className="welcome__nav__item">
-                        <a href="#">COVID-19</a>
-                    </div>
-                    <div className="welcome__nav__item">
-                        <a href="#">CAMPGAINS</a>
-                    </div>
+const WelcomePage = () => {
+    return (
+        <div className='welcome__page'>
+                <nav className='navigation'>
+                    <a className='nav__link' href = "#">RETAIL</a>
+                    <a className='nav__link' href = "#">SME</a>
+                    <a className='nav__link' href = "#">CORPORATE</a>
+                    <a className='nav__link' href = "#">ABOUT US</a>
+                    <a className='nav__link' href = "#">COVID-19</a>
+                    <a className='nav__link' href = "#">CAMPAIGNS</a>
+                </nav>
 
-            </nav>
+                <div className='main__content'>
+                    <div className='contents'>
+                        <div className='content__text'>
+                            <p className='text__header'>Chase Your<br/>Dream With Us</p>
+                            <p className='text__description'>The harder you work for something, the greater you feel, when you achieve it.</p>
+                        </div>
 
-            <div className = "welcome__content">
-                <div className = "welcome__header">
-                    <div className = "header__container">
-                        <h1 className = "header">Chase Your</h1>
-                        <h1 className = "header">Dreams With Us</h1>
+                        <div className='btns'>
+                            <button className='btn'>Apply online</button>
+                            <button className='btn'>Loan calculator</button>
+                        </div>
+                        
                     </div>
-                    <div className = "description__container">
-                        <p className = "description">The harder you work for something, the greater</p>
-                        <p className = "description">you'll fell, when you achieve it</p>
-                    </div>
-                
-
-                    <div className = "welcome__header__btns">
-                        <button className = "btn" id = "apply__online">Apply online</button>
-                        <button className = "btn" id = "loan__calculator">Loan calculator</button>
-                    </div>
+                    
                 </div>
 
-                <div className = "quick__access">
-                    <button className = "quick__access__btn" id = "car__loans">Car Loans</button>
-                    <button className = "quick__access__btn" id = "home__loan">Home Loan</button>
-                </div>
-            </div>
 
-            
+                <div className='additional__btns'>
+                    <button className='additional__btn' id ='car__loans'><BsCarFrontFill /> Car Loans</button>
+                    <button className='additional__btn' id ='home__loan'><BsFillHouseFill /> Home loan</button>
+                </div>
+
+                <footer className='contact__info'>
+                    <SocialIcon className='social__link' url="https://twitter.com"/>
+                    <SocialIcon className='social__link' url="https://youtube.com"/>
+                    <SocialIcon className='social__link' url="https://linkedin.com"/>
+                    <SocialIcon className='social__link' url="https://facebook.com"/>
+                </footer>
         </div>
-    )
-}
-export default WelcomePage
+    );
+};
+
+export default WelcomePage;
