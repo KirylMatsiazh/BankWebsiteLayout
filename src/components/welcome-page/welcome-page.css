@@ -1,197 +1,149 @@
-.welcome__page{
+/*Ilgarka*/
+.header_section{
     display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color:#97cba9;
 }
 
-
-.welcome__page>*{
-    padding: 10px;
-    margin: 10px;
-    flex: 1 100%;
-    border-radius: 10px;
+.header_section_right{
+    width:fit-content;
 }
 
-
-
-.navigation{
-    padding-top: 1%;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 1%;
-    flex-wrap: wrap;
+.header_section_left{
+    margin-top: 5%;
+    margin-left: 6%;
 }
 
-.nav__link{
-    margin: 1%;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-.nav__link:hover{
-    margin: 1%;
-    text-decoration: none;
-    color:#feffdf;
-    font-weight: 500;
-}
-
-
-
-.contact__info{
+.header_section_left h3{
     display: flex;
-    height: fit-content;
-    padding-left: 8%;
-    padding-bottom: 1%;
-    padding-top: 5%;
-    width:100%;
-    z-index: +1;
-}
-
-.social__link{
-    margin: 5px;
-}
-
-
-
-
-.main__content{
-    height: 50%;
-    padding-bottom: 5%;
-    padding-top: 3%;
-    background-color:#dde0ab;
-}
-
-.contents{
-    width: 70%;
-    margin-left: 20%;
     text-align: start;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 63px;
+    font-weight: bold;
+    width: fit-content;
+    max-width: 550px;
+}
+
+.header_section_left p{
+    text-align: left;
+    font-size: 16px;
+    color: #676767;
+}
+
+.header_section_left .apply_btn{
+    background-color: #ED017F;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bold;
 }
 
 
-.text__header{
-    font-size: 300%;
-    font-weight: 800;
-    margin-bottom: 0%;
-}
-
-.text__description{
-    color: #668ba4;
-    font-size: large;
-}
-
-.btn{
-    padding: 3%;
-    border: none;
-    border-radius: 10px;
-    background-color:#668ba4;
-    margin-right: 5%;
-    font-size: large;
-    color:#feffdf;
-    margin-bottom: 5%;
-}
-
-.btn:hover{
-    padding: 3%;
-    border: none;
-    border-radius: 10px;
-    background-color: #feffdf;
-    margin-right: 5%;
-    font-size: large;
-    color: #668ba4;
-    margin-bottom: 5%;
-}
-
-.btns{
-    padding-top: 5%;
+.header_section_left .loan_btn{
+    background-color: transparent;
+    color: #ED017F;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #ED017F;
+    font-weight: bold;
 }
 
 
+.header_section_left .loan_btn{
+    margin-left: 5%;
+}
 
-
-.additional__btns{
-    background-color:#dde0ab;
-    position: relative; /* Set position to relative */
+.header_section_left .btns{
     display: flex;
-    align-items: center;
-    padding-bottom: 20%;
-    padding-top: 0%;
-    z-index: +1;
 }
 
-.background-image {
-    position: absolute; /* Set position to absolute */
-    margin-top: 10%;
-    top: 0; /* Position at the top of the container */
-    left: 0; /* Position at the left of the container */
-    width: 100%; /* Set width to cover the entire container */
-    height: 100%; /* Set height to cover the entire container */
-    background-image: url('actualfamily.png'); /* Set the background image */
-    background-repeat: no-repeat;
-    background-position: 50% 100%; /* Position the background image at the bottom center */
-    background-size:contain;
-    z-index: -1; /* Move the background image behind the buttons */
+.header_img_container{
+    min-width: 400px;
+    margin-left: 20%;
+}
+
+.header_img{
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: auto; /* Ensure the height adjusts automatically to maintain aspect ratio */
+    display: block;
 }
 
 
-
-.additional__btn{
-    font-size: larger;
-    background-color: #668ba4;
-    color: #feffdf;
+.header_section_hover_btn{
+    position:relative;
+    background-color: #ED017F;
+    padding: 20px;
+    width: fit-content;
     border: none;
     border-radius: 30px;
-    font-weight: 900;
-    padding: 2%;
-    margin-right: 26%;
-    margin-left: 10%;
-    height: fit-content;
-    min-width: 20%;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
 }
 
-.additional__btn:hover{
-    font-size: larger;
-    background-color: #feffdf;
-    color: #668ba4;
-    border: none;
-    border-radius: 30px;
-    font-weight: 900;
-    padding: 2%;
-    margin-right: 26%;
-    margin-left: 10%;
-    height: fit-content;
-    min-width: 20%;
+#home{
+    left: 30%;
+    bottom: 70%;
 }
 
-#home__loan{
-    margin-top: 10%;
+#car{
+    left: -10%;
+    bottom: 80%;
 }
 
-
-
-
-@media all and (min-width: 800px){
-    .main__content{
-        flex: 2;
-        order: 1;
+@media only screen and (max-width: 1300px) {
+    .header_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .additional__btns{
-        order: 2;
+    .header_section_left h3{
+        text-align: center;
     }
 
-
-
-    .contact__info{
-        order: 3;
+    .header_section_left p{
+        text-align: center;
     }
-}
 
-@media all and (min-width: 600px){
-    .additional__btns{
-        flex: 3;
+    .header_section_left{
+        margin-top: 0%;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header_section_right{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+
+    .header_img_container{
+        min-width: 300px;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .header_section_hover_btn{
+        position: absolute;
+        
+    }
+
+    #home{
+        left: 70%;
+        top: 70%;
+        /* left: 0%;
+        bottom: 20%; */
+    }
+    
+    #car{
+        left: 20%;
+        bottom: 20%;
     }
 }

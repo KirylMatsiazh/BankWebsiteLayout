@@ -16,35 +16,23 @@ const WelcomePage = () => {
                     <a className='nav__link' href = "#">CAMPAIGNS</a>
                 </nav>
 
-                <div className='main__content'>
-                    <div className='contents'>
-                        <div className='content__text'>
-                            <p className='text__header'>Chase Your<br/>Dream With Us</p>
-                            <p className='text__description'>The harder you work for something, the greater you feel, when you achieve it.</p>
-                        </div>
-
+                <section className='header_section'>
+                    <div className='header_section_left'>
+                        <h3>Chase Your Dream With Us</h3>
+                        <p>The harder you work for something, the greater <br/>you'll feel, when you achieve it.</p>
                         <div className='btns'>
-                            <button className='btn'>Apply online</button>
-                            <button className='btn'>Loan calculator</button>
+                            <button className='apply_btn'>APPLY ONLINE</button>
+                            <button className='loan_btn'>LOAN CALCULATOR</button>
                         </div>
-                        
                     </div>
-                    
-                </div>
-
-
-                <div className='additional__btns'>
-                    <div className="background-image"></div>
-                    <button className='additional__btn' id ='car__loans'><BsCarFrontFill /> Car Loans</button>
-                    <button className='additional__btn' id ='home__loan'><BsFillHouseFill /> Home loan</button>
-                </div>
-
-                <footer className='contact__info'>
-                    <SocialIcon className='social__link' url="https://twitter.com"/>
-                    <SocialIcon className='social__link' url="https://youtube.com"/>
-                    <SocialIcon className='social__link' url="https://linkedin.com"/>
-                    <SocialIcon className='social__link' url="https://facebook.com"/>
-                </footer>
+                    <div className='header_section_right'>
+                        <div className='header_img_container'>
+                            <img className='header_img' alt='Family background' src={'family.png'}/>
+                        </div>
+                        <button className='header_section_hover_btn' id = 'car'><BsCarFrontFill /> Car Loans</button>
+                        <button className='header_section_hover_btn' id = 'home'><BsFillHouseFill /> Home Loans</button>
+                    </div>
+                </section>
         </div>
     );
 };

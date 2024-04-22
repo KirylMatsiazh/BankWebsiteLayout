@@ -1,0 +1,29 @@
+.strengths__page{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.text__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.strengths__header{
+    margin-bottom: 0%;
+}
+
+.strengths__description{
+    width: 40%;
+    display: flex;
+    text-align: center;
+}
+
+.strengths__cards{
+    background-color: tomato;
+    height: 80%;
+    width: 80%;
+}
