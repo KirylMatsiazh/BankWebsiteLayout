@@ -1,0 +1,18 @@
+.statistics_card{
+    max-width: 160px;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.statistics_card:hover{
+    color: #ED017F;
+}
+
+.statistics_card h5{
+    font-weight: 300;
+    max-width: 200px;
+}

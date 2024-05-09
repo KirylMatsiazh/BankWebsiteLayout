@@ -2,7 +2,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 3%;
+    padding-bottom: 3%;
 }
 
 .text__content{
@@ -13,17 +13,34 @@
 }
 
 .strengths__header{
+    font-size: 300%;
     margin-bottom: 0%;
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 2%;
+    min-width: 100px;
 }
 
 .strengths__description{
-    width: 40%;
+    width: 60%;
+    color: gray;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    min-width: 400px;
     display: flex;
     text-align: center;
+    font-size:150%;
 }
 
-.strengths__cards{
-    background-color: tomato;
+.strengths__cards {
     height: 80%;
-    width: 80%;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    column-gap: 10px;
+    row-gap: 5px;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }

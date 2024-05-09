@@ -1,0 +1,69 @@
+.news_subscription{
+    background-color: rgb(255, 243, 249);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news_subscription h1{
+    font-weight: 700;
+    margin: 2%;
+}
+
+.news_subscription p{
+    color: gray;
+    font-size: large;
+    display: flex;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+.news_subscription form{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email_input{
+    margin-right: 5px;
+    width: 450px;
+    min-width: 200px;
+    padding-left: 3%;
+    border: 1px solid;
+    border-color: rgb(191, 191, 191);
+    border-radius: 5px;
+}
+
+
+.news_subscription_submit{
+    margin-left: 5px;
+    width: 100px;
+    padding: 2%;
+    background-color:  #ED017F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.email_input, .news_subscription_submit{
+    height: 45px;
+}
+
+@media (max-width: 600px) {
+    .news_subscription form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news_subscription_submit{
+        margin-top: 5%;
+    }
+
+    .news_subscription p{
+        width: 70%;
+    }
+}

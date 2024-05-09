@@ -1,5 +1,16 @@
-.strength__card{
-    background-color: aqua;
-    width: 10%;
-    height: 10%;
+.strength__card {
+    width: 30%;
+    min-width: 200px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.strength__card__header{
+        margin: 5%;
+        margin-left: 0%;
+}
+
+.strength__card __content{
+    width: 100%;
 }

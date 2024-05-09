@@ -1,0 +1,39 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, max-content); /* Create four columns with minimum width */
+    gap: 5%; /* Adjust gap between grid items */
+    justify-content: center;
+    padding: 5%;
+}
+
+.footer_column{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column_header{
+    margin-bottom: 10%;
+}
+
+.footer_column_content{
+    color: gray;
+}
+
+.footer_column_link{
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 5%;
+}
+
+.footer_column_link:hover{
+    color: #ED017F;
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        grid-template-columns: repeat(2, min-content); /* Adjust to two columns for smaller screens */
+        gap: 10% 30%
+    }
+}
+

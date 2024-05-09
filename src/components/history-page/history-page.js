@@ -1,14 +1,25 @@
-import "./history.css";
+import "./history-page.css";
 
-function HistoryPage(){
+export default function HistoryPage(){
     return(
-        <div className = "history__page">
-            <div className = "history__img">
-{/*-Add test image here*/}
+        <div class="container">
+            <div class="image-container">
+                <img src = {"history-page-img.png"} alt=""/>
             </div>
-            <p className = "history__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam diam eu porta pellentesque. Nullam facilisis est dignissim, suscipit lectus sit amet, iaculis felis. Fusce sit amet volutpat elit. Nullam nec purus dapibus, porta ex non, gravida dolor. Donec pellentesque eros nec justo tempor tristique. Suspendisse in nulla tellus. Maecenas condimentum, diam non semper ultricies, dolor eros imperdiet augue, vel egestas nunc metus vitae tellus. In varius suscipit convallis. Etiam auctor orci nec elit cursus, suscipit molestie metus tincidunt. Curabitur cursus nulla at nisl rutrum condimentum. Proin mattis ligula at egestas feugiat. Aliquam nisi turpis, ultricies vel finibus a, feugiat non lorem. Aliquam varius, mi ut convallis fermentum, tortor arcu aliquet orci, at tincidunt est enim vulputate quam. Integer luctus fermentum aliquet. Pellentesque vel sollicitudin felis. Maecenas ut rutrum libero. Etiam volutpat ligula a nulla hendrerit ultricies. Duis dapibus condimentum nunc, quis fermentum ex facilisis nec. In ullamcorper risus ut nibh porttitor, quis fringilla ligula molestie. Pellentesque id suscipit nibh, hendrerit molestie lorem. In facilisis commodo maximus. Mauris in odio tellus.
-            </p>
+            <div class="text-container">
+                <h2>IPDC AT A GLANCE</h2>
+                <p>IPDC Finance Limited (previously known as "Industrial Promotion and Development Company of Bangladesh Limited") is the first private sector financial institution of the country established in 1981 by a distinguished group of shareholders namely International Finance Corporation (IFC), USA, German Investment and Development Company (DEG), Germany, The Aga Khan Fund for Economic Development (AKFED), Switzerland, Commonwealth Development Corporation (CDC), UK and the Government of Bangladesh</p>
+            </div>
         </div>
+
+
+        
     )
 }
+
+/* // <div className ="history_container">
+        //     <img className="img_container" src = {"history-page-img.png"} alt=""/>
+        //     <div className ="text_container">
+        //         <p>IPDC Finance Limited (previously known as "Industrial Promotion and Development Company of Bangladesh Limited") is the first private sector financial institution of the country established in 1981 by a distinguished group of shareholders namely International Finance Corporation (IFC), USA, German Investment and Development Company (DEG), Germany, The Aga Khan Fund for Economic Development (AKFED), Switzerland, Commonwealth Development Corporation (CDC), UK and the Government of Bangladesh</p>
+        //     </div>
+        // </div> */

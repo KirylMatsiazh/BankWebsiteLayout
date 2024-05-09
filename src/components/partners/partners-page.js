@@ -1,21 +1,12 @@
-import "./partners-page.css";
-import PartnerUnit from "./partner-unit/partner-unit.js";
+import './partners-page.css';
+import Slider from "./partners-carousel/slider";
 
-function PartnersPage(){
-    return(
-        <div className = "partners__page">
-            <h2 className = "partners__header">Business Partners</h2>
-            <div className = "partners">
-                <PartnerUnit/>
-                <PartnerUnit/>
-                <PartnerUnit/>
-                <PartnerUnit/>
-                <PartnerUnit/>
-                <PartnerUnit/>
-                <PartnerUnit/>
-            </div>
+
+export default function PartnersPage() {
+    return (
+        <div className="partners-page">
+            <h3>BUSINESS PURTNERS</h3>
+            <Slider/>
         </div>
-    )
+    );
 }
-
-export default PartnersPage

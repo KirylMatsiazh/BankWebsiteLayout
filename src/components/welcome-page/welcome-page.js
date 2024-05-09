@@ -1,6 +1,5 @@
 import React from 'react';
 import './welcome-page.css';
-import { SocialIcon } from 'react-social-icons'
 import { BsCarFrontFill } from "react-icons/bs";
 import { BsFillHouseFill } from "react-icons/bs";
 
@@ -27,10 +26,10 @@ const WelcomePage = () => {
                     </div>
                     <div className='header_section_right'>
                         <div className='header_img_container'>
-                            <img className='header_img' alt='Family background' src={'family.png'}/>
+                            <button className='header_section_hover_btn' id = 'car'><BsCarFrontFill className='btn_icon' />Car Loans</button>
+                            <button className='header_section_hover_btn' id = 'home'><BsFillHouseFill className='btn_icon' />Home Loans</button>
                         </div>
-                        <button className='header_section_hover_btn' id = 'car'><BsCarFrontFill /> Car Loans</button>
-                        <button className='header_section_hover_btn' id = 'home'><BsFillHouseFill /> Home Loans</button>
+                        
                     </div>
                 </section>
         </div>

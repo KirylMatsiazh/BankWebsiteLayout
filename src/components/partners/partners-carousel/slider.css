@@ -1,0 +1,31 @@
+.carousel_container{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.carousel_item{
+    width:50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.active{
+    margin: 1%;
+    border: none;
+    background-color: #ED017F;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.inactive{
+    margin: 1%;
+    border: none;
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}

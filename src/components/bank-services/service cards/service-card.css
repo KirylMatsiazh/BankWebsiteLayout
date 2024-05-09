@@ -1,0 +1,16 @@
+.service_card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+    margin-bottom: 0%;
+}
+
+.service_card img{
+    margin-bottom: 5%;
+}
+
+.service_card h3{
+    width: 255px;
+    font-weight: 400;
+}
