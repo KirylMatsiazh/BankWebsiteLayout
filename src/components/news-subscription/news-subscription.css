@@ -55,6 +55,7 @@
 
 @media (max-width: 600px) {
     .news_subscription form{
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,5 +66,9 @@
 
     .news_subscription p{
         width: 70%;
+    }
+    .email_input{
+        width: 350px;
+        margin-right: 0%;
     }
 }
